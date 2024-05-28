@@ -2,23 +2,29 @@
     margin: 0;
 }
 
+body {
+    height: 100vh;
+    background-image: linear-gradient(#87A1FF, #D3DFFF);
+}
+
 header {
     margin: 25px;
     padding: 5px;
-    background-color: #a7b5e1;
+    background-color: #E6E9FE;
     color: #3658be;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-shadow: 2px 2px 2px rgba(0,0,0,0.5);
     text-align: center;
     position: relative;
+    border-style: solid;
     border-radius: 10px;
 }
 
 .inner-border {
-    padding: 25px 0; /* Adjust padding to control distance from header edges */
+    padding: 25px 0; 
     position: relative;
-    width: 100%; /* Make the inner-border span the full width */
-    box-sizing: border-box; /* Ensure padding does not affect the width */
+    width: 100%; 
+    box-sizing: border-box; 
 }
 
 .inner-border::before,
@@ -52,6 +58,196 @@ h2 {
 }
 
 .social-media a {
-    font-size: 16px; /* Adjust icon size as needed */
+    font-size: 16px; 
     padding: 10px 20px;
+}
+
+.main-page {
+    display: flex;
+    background-color: #FEFFEF;
+    margin: 25px;
+    padding: 15px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: #3658be;
+}
+
+.left-panel {
+    background-color: #E6E9FE;
+    margin: 10px 18px;
+    padding: 5px;
+    width: 24%;
+    height: 25%;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 10px;
+    border-color: #3658be;
+}
+
+.links {
+    display: flex;
+    margin: 10px 18px;
+    width: 88%;
+    border-style: solid;
+    border-width: 3px;
+    border-color: green;
+    background-color: #E6E9FE;
+    border-radius: 10px;
+}
+
+.left-panel ul{
+    list-style-type: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.left-panel a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+}
+
+.fact-sheet {
+    margin: 10px 18px;
+    padding: 10px;
+    background-color: #E6E9FE;
+    border-style: solid;
+    border-color: green;
+    border-radius: 10px;
+    border-width: 3px;
+    text-align: center;
+    width: 90%;
+    height: 325px;
+}
+
+.fact-sheet h3 {
+    font-size: 24px;
+}
+
+.center-page {
+    display: flex;
+    background-color: #E6E9FE;
+    width: 50%;
+    margin: 10px 1px;
+    padding: 25px;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 10px;
+    border-color: #3658be;
+}
+
+.description {
+    padding-top: 5px;
+    width: 60%;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 18px;
+    border-color: #87A1FF;
+}
+
+.description p {
+    padding: 15px;
+}
+
+.tshirt {
+    border-style: solid;
+    border-color: #87A1FF;
+    border-width: 3px;
+    border-radius: 18px;
+    padding-top: 25px;
+    margin-left: 10px;
+}
+
+.right-panel {
+    background-color: #E6E9FE;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 10px;
+    border-color: #3658be;
+    padding: 10px ;
+    width: 21%;
+    margin: 10px 18px;
+    text-align: center;
+    height: 300px;
+}
+
+.albums {
+    background-color: #E6E9FE;
+    border-style: dotted;
+    border-width: 3px;
+    border-radius: 10px;
+    border-color: #3658be;
+    padding: 5px;
+    margin: 10px;
+    height: 92%;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.albums ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+.albums li {
+    padding: 5px;
+}
+
+.footer {
+    display: flex;
+    background-color: #FEFFEF;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 10px;
+    border-color: #3658be;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    margin: auto;
+    width: 96.5%;
+    padding: 10px 20px;
+}
+
+.footer-left, .footer-center, .footer-right {
+    display: flex;
+    align-items: center;
+}
+
+.footer-center {
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.footer a {
+    margin: 10px 10px;
+    align-items: center;
+    text-align: center;
+    padding: 10px 16px;
+    border: none;
+}
+
+.footer p {
+    margin: 10px 10px;
+}
+
+.albums {
+    height: 260px;
+    overflow-y: auto;
+}
+
+.albums::-webkit-scrollbar {
+    width: 10px;
+}
+
+.albums::-webkit-scrollbar-thumb {
+    background: #87A1FF;
+    border-radius: 10px;
+}
+
+.albums::-webkit-scrollbar-track {
+    background: #E6E9FE;
+    border-radius: 10px;
 }
